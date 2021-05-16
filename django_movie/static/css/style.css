@@ -109,6 +109,7 @@ nav {
 }
 
 
+
 /* Since we'll have the "ul li" "float:left"
  * we need to add a clear after the container. */
 
@@ -382,7 +383,7 @@ li > a:only-child:after {
 /*--/banner --*/
 
 .main-banner {
-    background: url(../single-post-pic2.jpg) no-repeat center;
+    background: url(../приручить_дракона.jpg)no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -393,7 +394,7 @@ li > a:only-child:after {
 }
 
 .main-banner.inner {
-    background: url(../images/banner.jpg) no-repeat center;
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -402,13 +403,11 @@ li > a:only-child:after {
     position: relative;
     min-height: 20em;
 }
-
 .bg1 {
     background-color: rgba(0, 0, 0, 0);
     margin-top: 0;
     background-image: url('../single-post-pic.jpg');
 }
-
 /*-- place holder --*/
 
 .banner-form ::-webkit-input-placeholder {
@@ -658,45 +657,6 @@ span.product-new-top {
     color: #fff;
 }
 
-/* Checkbox stars */
-.rating {
-    overflow: hidden;
-    vertical-align: bottom;
-    display: inline-block;
-    width: 155px;
-    height: 30px;
-}
-
-.rating > input {
-    opacity: 0;
-    margin-right: -100%;
-}
-
-.rating > label {
-    position: relative;
-    display: block;
-    float: right;
-    background: url('../images/star-off-big.png');
-    background-size: 30px 30px;
-}
-
-.rating > label:before {
-    display: block;
-    opacity: 0;
-    content: '';
-    width: 30px;
-    height: 30px;
-    background: url('../images/star-on-big.png');
-    background-size: 30px 30px;
-    transition: opacity 0.2s linear;
-}
-
-.rating > label:hover:before, .rating > label:hover ~ label:before, .rating:not(:hover) > :checked ~ label:before {
-    opacity: 1;
-}
-
-/* //Checkbox stars */
-
 /*-- //New-Arrivals --*/
 
 section#brands {
@@ -725,6 +685,40 @@ section#brands {
     -webkit-transition: all 1s;
     -o-transition: all 1s;
 }
+
+.rating {
+  overflow: hidden;
+  vertical-align: bottom;
+  display: inline-block;
+  width: 155px;
+  height: 30px;
+}
+
+.rating > input {
+  opacity: 0;
+  margin-right: -100%;
+}
+
+.rating > label {
+  position: relative;
+  display: block;
+  float: right;
+  background: url('../images/star-off-big.png');
+  background-size: 30px 30px;
+}
+
+.rating > label:before {
+  display: block;
+  opacity: 0;
+  content: '';
+  width: 30px;
+  height: 30px;
+  background: url('../images/star-on-big.png');
+  background-size: 30px 30px;
+  transition: opacity 0.2s linear;
+}
+
+.rating > label:hover:before,  .rating > label:hover ~ label:before,  .rating:not(:hover) > :checked ~ label:before { opacity: 1; }
 
 .service-content h4 {
     font-size: 1.15em;
@@ -887,7 +881,7 @@ ul.w3layouts-box-list li {
 }
 
 .grid-img-right {
-    background: url(../images/single.jpg) no-repeat center;
+    background: url(../single-post-pic.jpg) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -908,7 +902,7 @@ ul.w3layouts-box-list li {
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
-    /*color: #fff;*/
+    color: #fff;
     padding: 0;
 
 }
@@ -1008,7 +1002,12 @@ h3.sear-head {
 
 /*-- //customer --*/
 
-/* Pagination */
+/*--/footer--*/
+
+footer {
+    background: #f7f7f7;
+}
+
 .pagination {
     width: auto;
     margin: 0 auto
@@ -1109,12 +1108,6 @@ h3.sear-head {
     color: #bfc0f1
 }
 
-/* --/Pagination */
-/*--/footer--*/
-
-footer {
-    background: #f7f7f7;
-}
 
 h3.footer-title {
     font-size: 1.1em;
@@ -1386,7 +1379,7 @@ a.move-top span {
 
 /*-- //to-top --*/
 
-@media (max-width: 1366px) {
+@media(max-width:1366px) {
     .main-banner {
         min-height: 45em;
     }
@@ -1401,7 +1394,7 @@ a.move-top span {
     }
 }
 
-@media (max-width: 1280px) {
+@media(max-width:1280px) {
     h3.tittle {
         font-size: 2.3em;
     }
@@ -1415,7 +1408,7 @@ a.move-top span {
     }
 }
 
-@media (max-width: 1080px) {
+@media(max-width:1080px) {
     .banner-info h3 {
         font-size: 3em !important;
         letter-spacing: 2px;
@@ -1435,7 +1428,7 @@ a.move-top span {
     }
 }
 
-@media (max-width: 1024px) {
+@media(max-width:1024px) {
     .banner-info {
         padding: 14em 0 0em 3em;
         width: 40%;
@@ -1447,7 +1440,7 @@ a.move-top span {
     }
 }
 
-@media (max-width: 991px) {
+@media(max-width:991px) {
 
     .gd-bottom {
         float: left;
@@ -1496,7 +1489,7 @@ a.move-top span {
 
 /*** Responsive Menu For Smaller Device ***/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width:900px) {
     .dropdown-menu {
         width: 100%;
     }
@@ -1516,7 +1509,7 @@ a.move-top span {
     }
 }
 
-@media (max-width: 800px) {
+@media(max-width:800px) {
     .main-banner.inner {
         min-height: 12em;
     }
@@ -1535,7 +1528,7 @@ a.move-top span {
     }
 }
 
-@media (max-width: 768px) {
+@media(max-width:768px) {
     .banner-info {
         padding: 11em 0 0em 1em;
         width: 58%;
@@ -1548,7 +1541,7 @@ a.move-top span {
     }
 }
 
-@media (max-width: 767px) {
+@media(max-width:767px) {
     .icon-gd-info {
         text-align: center;
     }
@@ -1601,7 +1594,7 @@ a.move-top span {
     }
 }
 
-@media (max-width: 640px) {
+@media(max-width:640px) {
     .main-banner {
         min-height: 28em;
     }
@@ -1622,7 +1615,7 @@ a.move-top span {
     }
 }
 
-@media (max-width: 568px) {
+@media(max-width:568px) {
     .banner-info h3 {
         font-size: 2em !important;
         letter-spacing: 2px;
@@ -1639,7 +1632,7 @@ a.move-top span {
 
 }
 
-@media (max-width: 480px) {
+@media(max-width:480px) {
     .main-banner {
         min-height: 25em;
     }
@@ -1664,7 +1657,7 @@ a.move-top span {
     }
 }
 
-@media (max-width: 440px) {
+@media(max-width:440px) {
     .banner-info {
         padding: 8em 0 0em 1em;
         width: 68%;
@@ -1692,20 +1685,17 @@ a.move-top span {
 
 }
 
-@media (max-width: 414px) {
+@media(max-width:414px) {
     .banner-info {
         padding: 8em 0 0em 1em;
         width: 75%;
     }
 }
 
-@media (max-width: 384px) {
-}
+@media(max-width:384px) {}
 
-@media (max-width: 375px) {
-}
+@media(max-width:375px) {}
 
-@media (max-width: 320px) {
-}
+@media(max-width:320px) {}
 
 /*--//responsive--*/
