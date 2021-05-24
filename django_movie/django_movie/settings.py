@@ -32,6 +32,9 @@ INSTALLED_APPS = [
     'movies',
     'contact',
     'snowpenguin.django.recaptcha3',
+
+    'allauth',
+    'allauth.account',
 ]
 
 MIDDLEWARE = [
@@ -75,6 +78,11 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -194,6 +202,8 @@ RECAPTCHA_PUBLIC_KEY = '6Lde2dcaAAAAAAtVbZZOFLeZPYvPjuCHlsumKtHa'
 RECAPTCHA_PRIVATE_KEY = '6Lde2dcaAAAAAFuT_ZHMy40lzgwzQPCRtoLlbMrV'
 RECAPTCHA_DEFAULT_ACTION = 'generic'
 RECAPTCHA_SCORE_THRESHOLD = 0.5
+
+SITE_ID = 1
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
